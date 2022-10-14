@@ -53,7 +53,7 @@ def basic_clean(original):
     .encode('ascii', 'ignore')\
     .decode('utf-8')
     #use re.sub to remove special characters
-    article = re.sub(r'[^a-z0-9\'\s]', '', article)
+    article = re.sub(r'[^a-z0-9\s]', '', article)
     return article
 
 def tokenize(article):
